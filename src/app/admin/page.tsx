@@ -15,9 +15,14 @@ interface Lead {
 }
 
 export default async function AdminPage() {
-  const leads: Lead[] = await prisma.lead.findMany({
-    orderBy: { createdAt: "desc" },
-  });
+  let leads: Lead[] = [];
+  try {
+    leads = await prisma.lead.findMany({
+      orderBy: { createdAt: "desc" },
+    });
+  } catch (error) {
+    console.error("Failed to query leads on admin page:", error);
+  }
 
   return (
     <div className="min-h-screen bg-black text-white pt-28 sm:pt-32 px-4 sm:px-8 md:px-12 pb-24 selection:bg-white selection:text-black">
