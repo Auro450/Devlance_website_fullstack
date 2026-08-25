@@ -33,7 +33,7 @@ const projects = [
     category: "Web Development",
     image: "/images/earthbags-ecommerce.png",
     imagePosition: "object-top",
-    href: "/services/web-development#ecommerce"
+    href: "https://shopearthbags.com/"
   },
   {
     id: 4,
