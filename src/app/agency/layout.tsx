@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "devlance",
     "dev-lance",
     "dev lance",
-    "devlance.in",
+    "devlance.online",
     "it services near me",
     "it solutions",
     "data solutions",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "About Devlance | IT Services & Digital Transformation Agency",
     description:
       "Democratizing elite IT services, custom web solutions & digital transformation for ambitious businesses at affordable rates.",
-    url: "https://devlance.in/agency",
+    url: "https://devlance.online/agency",
   },
 };
 

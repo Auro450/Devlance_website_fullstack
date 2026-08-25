@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "IT App Development & Custom Web Solutions | Devlance",
     description:
       "Custom full-stack web applications, IT solutions, data solutions, e-commerce, and cloud platforms engineered for scale at budget-friendly pricing.",
-    url: "https://devlance.in/services/web-development",
+    url: "https://devlance.online/services/web-development",
   },
 };
 

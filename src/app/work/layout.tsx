@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "Case Studies & Portfolio | Devlance (dev-lance)",
     description:
       "A deep dive into our elite digital engineering projects: Tajacart, Jaywalking, Earthbags, Multicon, Ray's Medical, and more.",
-    url: "https://devlance.in/work",
+    url: "https://devlance.online/work",
   },
 };
 

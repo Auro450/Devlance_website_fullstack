@@ -13,7 +13,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://devlance.in";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://devlance.online";
 
 export const viewport: Viewport = {
   themeColor: "#000000",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     "devlance",
     "dev-lance",
     "dev lance",
-    "devlance.in",
+    "devlance.online",
     "Devlance agency",
     "it services near me",
     "it app development near me",
@@ -153,7 +153,7 @@ const jsonLdSchema = {
       ],
       sameAs: [
         "https://wa.me/919547934724",
-        "https://devlance.in",
+        "https://devlance.online",
       ],
     },
     {

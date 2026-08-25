@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Digital Marketing & Automation Agency Near Me | Devlance",
     description:
       "Laser-targeted Meta Ads, AI automation, and high-impact digital growth marketing for local business scaling.",
-    url: "https://devlance.in/growth",
+    url: "https://devlance.online/growth",
   },
 };
 

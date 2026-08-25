@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "UI/UX Product Design & Web Solutions | Devlance",
     description:
       "World-class flashy UI/UX tailored specifically for small brands and ambitious businesses with affordable pricing.",
-    url: "https://devlance.in/services/ui-ux",
+    url: "https://devlance.online/services/ui-ux",
   },
 };
 
