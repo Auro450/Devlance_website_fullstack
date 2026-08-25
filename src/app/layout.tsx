@@ -25,12 +25,37 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Devlance | Best Web Development & Digital Marketing Agency",
+    default: "Devlance | IT Services, App Development & Web Solutions Agency Near Me",
     template: "%s | Devlance",
   },
   description:
-    "Devlance is the best and affordable website development & digital marketing agency in Kolkata, West Bengal. We build full stack web development, high-converting UI/UX design, AI automation & digital marketing at cheap rates and affordable pricing.",
+    "Devlance (dev-lance) is the best IT services, freelance app development & website development agency in Kolkata, West Bengal. We specialize in custom web apps, web solutions, IT & data solutions, digital transformation, AI automation & digital marketing to help local businesses grow at affordable pricing starting from ₹10,000.",
   keywords: [
+    "Devlance",
+    "devlance",
+    "dev-lance",
+    "dev lance",
+    "devlance.in",
+    "Devlance agency",
+    "it services near me",
+    "it app development near me",
+    "freelance website development near me",
+    "web development near me",
+    "digital marketing agency near me",
+    "website design company near me",
+    "software development agency near me",
+    "freelance web developer near me",
+    "app developers near me",
+    "it solutions near me",
+    "data solutions near me",
+    "web apps",
+    "web solutions",
+    "websites",
+    "it solutions",
+    "data solutions",
+    "digital transformation",
+    "digital automation",
+    "digital marketing",
     "best web development agency",
     "affordable website development agency",
     "best digital marketing agency in west bengal",
@@ -45,6 +70,7 @@ export const metadata: Metadata = {
     "ai automation agency",
     "next.js agency",
     "ecommerce website development kolkata",
+    "helping local business to grow",
   ],
   authors: [
     { name: "Aurojyoti Kundu" },
@@ -62,9 +88,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Devlance | Best Web Development & Digital Marketing Agency",
+    title: "Devlance | IT Services, App Development & Web Solutions Agency",
     description:
-      "Premier digital product, technology, AI automation & growth agency in Kolkata, West Bengal. Custom full-stack web applications and marketing at affordable pricing starting from ₹10,000.",
+      "Looking for IT services, app development or freelance website development near me? Devlance builds custom web apps, IT solutions, data solutions & digital transformation for growing businesses.",
     url: siteUrl,
     siteName: "Devlance",
     locale: "en_US",
@@ -72,9 +98,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Devlance | Best Web Development & Digital Marketing Agency",
+    title: "Devlance | IT Services, App Development & Web Solutions Agency",
     description:
-      "Affordable website development, full-stack apps, UI/UX, and digital marketing agency in Kolkata, West Bengal.",
+      "Affordable IT services, freelance app development, custom web solutions, digital automation & marketing agency in Kolkata, West Bengal.",
     creator: "@devlance",
   },
   robots: {
@@ -90,7 +116,7 @@ export const metadata: Metadata = {
   },
   other: {
     "geo.region": "IN-WB",
-    "geo.placename": "Kolkata, West Bengal",
+    "geo.placename": "Kolkata, West Bengal, India",
     "geo.position": "22.5726;88.3639",
     ICBM: "22.5726, 88.3639",
   },
@@ -103,10 +129,11 @@ const jsonLdSchema = {
       "@type": "Organization",
       "@id": `${siteUrl}/#organization`,
       name: "Devlance",
+      alternateName: ["devlance", "dev-lance", "dev lance", "Devlance Agency", "Devlance IT Solutions"],
       url: siteUrl,
       logo: `${siteUrl}/favicon.ico`,
       description:
-        "Devlance is the best affordable website development and digital marketing agency in Kolkata, West Bengal specializing in full-stack web development, UI/UX, AI automation, and growth marketing.",
+        "Devlance is an IT services, web development, app development, and digital marketing agency in Kolkata, West Bengal specializing in full-stack web solutions, IT & data solutions, digital transformation, and AI automation for local business growth.",
       telephone: "+919547934724",
       address: {
         "@type": "PostalAddress",
@@ -124,26 +151,53 @@ const jsonLdSchema = {
           name: "Somsubhra Abir Das",
         },
       ],
+      sameAs: [
+        "https://wa.me/919547934724",
+        "https://devlance.in",
+      ],
     },
     {
-      "@type": "ProfessionalService",
+      "@type": ["ProfessionalService", "LocalBusiness", "ITService"],
       "@id": `${siteUrl}/#service`,
-      name: "Devlance Digital Agency",
+      name: "Devlance IT Services & Digital Agency",
+      alternateName: ["devlance", "dev-lance", "dev lance"],
       url: siteUrl,
       image: `${siteUrl}/favicon.ico`,
       priceRange: "₹₹ (Affordable Pricing starting from ₹10,000)",
       telephone: "+919547934724",
+      areaServed: [
+        "Kolkata",
+        "West Bengal",
+        "India",
+        "Worldwide",
+      ],
       address: {
         "@type": "PostalAddress",
+        streetAddress: "Db 23, Db block, Newtown Action Area 1",
         addressLocality: "Kolkata",
         addressRegion: "West Bengal",
+        postalCode: "700156",
         addressCountry: "IN",
       },
       geo: {
         "@type": "GeoCoordinates",
-        latitude: "22.5726",
-        longitude: "88.3639",
+        latitude: 22.5726,
+        longitude: 88.3639,
       },
+      knowsAbout: [
+        "Devlance",
+        "dev-lance",
+        "IT services near me",
+        "IT app development near me",
+        "freelance website development near me",
+        "web apps",
+        "web solutions",
+        "IT solutions",
+        "data solutions",
+        "digital transformation",
+        "digital automation",
+        "digital marketing",
+      ],
       openingHoursSpecification: {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: [
@@ -159,15 +213,33 @@ const jsonLdSchema = {
       },
       hasOfferCatalog: {
         "@type": "OfferCatalog",
-        name: "Agency Services",
+        name: "Devlance IT & Digital Solutions",
         itemListElement: [
           {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Full Stack Web Development",
+              name: "Full Stack Web Development & Web Apps",
               description:
-                "Custom Next.js, Node.js & React web applications with scalable database architecture at affordable rates starting at ₹10,000.",
+                "Custom Next.js, Node.js & React web applications, web solutions, and freelance website development at affordable rates starting at ₹10,000.",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "IT Solutions & App Development",
+              description:
+                "Custom mobile and web app development, IT solutions, and software architecture tailored for growing businesses.",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Data Solutions & Digital Transformation",
+              description:
+                "Data architecture, modernizing legacy systems, cloud integrations, and business digital transformation.",
             },
           },
           {
@@ -176,7 +248,7 @@ const jsonLdSchema = {
               "@type": "Service",
               name: "UI/UX Development",
               description:
-                "Bespoke high-conversion user interfaces, prototypes, and mobile app design.",
+                "Bespoke high-conversion user interfaces, interactive prototypes, and mobile app design.",
             },
           },
           {
@@ -185,16 +257,16 @@ const jsonLdSchema = {
               "@type": "Service",
               name: "Digital Marketing & Growth",
               description:
-                "Meta Ads, influencer collaborations, social media management, and WhatsApp marketing in West Bengal starting at ₹12,000/month.",
+                "Meta Ads, influencer collaborations, social media management, and WhatsApp marketing starting at ₹12,000/month.",
             },
           },
           {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "AI Automation",
+              name: "AI Automation & Digital Workflows",
               description:
-                "Custom AI chatbots, smart automated workflows, and LLM implementations.",
+                "Custom AI chatbots, smart automated workflows, LLM implementations, and WhatsApp automation.",
             },
           },
         ],
