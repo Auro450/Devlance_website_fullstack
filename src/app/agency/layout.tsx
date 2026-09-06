@@ -1,10 +1,19 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Devlance | Affordable Website Development Agency in Kolkata",
+  title: "About Devlance (dev-lance) | IT Services & Digital Transformation Agency",
   description:
-    "Devlance is an elite digital engineering and growth agency based in Kolkata, West Bengal. Founded by Aurojyoti Kundu & Somsubhra Abir Das, democratizing premium web development from ₹10,000.",
+    "Learn about Devlance (dev-lance), a leading IT services, app development, data solutions & digital transformation agency in Kolkata, West Bengal founded by Aurojyoti Kundu & Somsubhra Abir Das.",
   keywords: [
+    "Devlance",
+    "devlance",
+    "dev-lance",
+    "dev lance",
+    "devlance.online",
+    "it services near me",
+    "it solutions",
+    "data solutions",
+    "digital transformation",
     "affordable website development agency in kolkata",
     "best web development agency",
     "best agency in kolkata",
@@ -18,10 +27,10 @@ export const metadata: Metadata = {
     canonical: "/agency",
   },
   openGraph: {
-    title: "About Devlance | Digital Agency Kolkata",
+    title: "About Devlance | IT Services & Digital Transformation Agency",
     description:
-      "Democratizing elite digital engineering and world-class design for ambitious businesses at affordable rates.",
-    url: "https://devlance.in/agency",
+      "Democratizing elite IT services, custom web solutions & digital transformation for ambitious businesses at affordable rates.",
+    url: "https://devlance.online/agency",
   },
 };
 

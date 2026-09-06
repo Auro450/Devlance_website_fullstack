@@ -16,7 +16,8 @@ import {
   Globe,
   Smartphone,
   TrendingUp,
-  Bot
+  Bot,
+  MessageSquare
 } from "lucide-react";
 import { cn } from "@/utils/cn";
 
@@ -76,6 +77,26 @@ export function LeadFormModal({ onClose }: LeadFormModalProps) {
     setFormData((prev) => ({ ...prev, businessType: type }));
   };
 
+  const getWhatsAppUrl = () => {
+    const targetNumber = "919547934724";
+    const reqText = selectedReqs.length > 0 ? selectedReqs.join(", ") : "General Inquiry";
+    const emailText = formData.email.trim() || "Not provided";
+    
+    const message = `🚀 *New Project Inquiry - Devlance*
+
+👤 *Client Name:* ${formData.name.trim()}
+📞 *Phone Number:* ${formData.phone.trim()}
+✉️ *Email Address:* ${emailText}
+🏢 *Business Name:* ${formData.businessName.trim()}
+🏷️ *Business Type:* ${formData.businessType.trim()}
+⚡ *Requirements:* ${reqText}
+
+---
+Sent via Devlance Website Contact Form`;
+
+    return `https://wa.me/${targetNumber}?text=${encodeURIComponent(message)}`;
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -102,10 +123,11 @@ export function LeadFormModal({ onClose }: LeadFormModalProps) {
 
       if (!response.ok) throw new Error("Failed to submit");
       
+      // Generate & launch WhatsApp chat with structured request details
+      const waUrl = getWhatsAppUrl();
+      window.open(waUrl, "_blank", "noopener,noreferrer");
+
       setIsSuccess(true);
-      setTimeout(() => {
-        onClose();
-      }, 3500);
     } catch (error) {
       console.error(error);
       alert("Something went wrong. Please try again.");
@@ -188,20 +210,32 @@ export function LeadFormModal({ onClose }: LeadFormModalProps) {
                   Our executive will get back to you shortly!
                 </p>
                 <p className="text-gray-400 text-sm max-w-sm mx-auto pt-1">
-                  We have registered your project requirements and will connect with you on{" "}
-                  <span className="text-white font-semibold">+{formData.phone}</span>.
+                  We have registered your project requirements and sent the details to our WhatsApp representative.
                 </p>
               </motion.div>
 
-              <motion.button
+              <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.35 }}
-                onClick={onClose}
-                className="mt-8 px-8 py-3 rounded-full bg-white text-black font-semibold text-sm hover:bg-neutral-200 transition-colors shadow-lg shadow-white/10"
+                className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 w-full max-w-md"
               >
-                Close Window
-              </motion.button>
+                <a
+                  href={getWhatsAppUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-black font-bold text-sm transition-all duration-200 flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20"
+                >
+                  <MessageSquare className="w-4 h-4 fill-black" />
+                  <span>Open WhatsApp Chat</span>
+                </a>
+                <button
+                  onClick={onClose}
+                  className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-sm transition-colors border border-white/10"
+                >
+                  Close Window
+                </button>
+              </motion.div>
             </motion.div>
           ) : (
             /* FORM STATE */

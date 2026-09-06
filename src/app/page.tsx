@@ -31,6 +31,11 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-black text-white selection:bg-white selection:text-black overflow-hidden">
+      {/* Hidden H1 for Search Engine Crawlers & Accessibility */}
+      <h1 className="sr-only">
+        Devlance | dev-lance | IT Services Near Me | IT App Development Near Me | Freelance Website Development Near Me | Custom Web Solutions & Data Solutions
+      </h1>
+
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-end pb-24 px-8 md:px-24 pt-48 relative">
         <div className="max-w-6xl w-full">
@@ -47,7 +52,7 @@ export default function Home() {
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-white/20 pt-8">
             <TextWipe delay={0.8} className="block">
               <p className="text-lg md:text-xl text-gray-400 max-w-md">
-                Devlance is a premier digital agency specializing in full-stack web applications, mobile applications, striking UI/UX, AI automation, and digital marketing for growth.
+                Devlance (dev-lance) is a premier IT services & web agency. We specialize in custom web apps, web solutions, freelance website development near me, IT app development near me, IT & data solutions, digital transformation, AI automation, and digital marketing to help local businesses grow.
               </p>
             </TextWipe>
             <div className="flex md:justify-end items-start">

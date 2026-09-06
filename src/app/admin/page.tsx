@@ -3,10 +3,26 @@ import { Users, Phone, Mail, Building, Briefcase, Layers, Calendar } from "lucid
 
 export const dynamic = "force-dynamic";
 
+interface Lead {
+  id: string;
+  name: string;
+  phone: string;
+  email: string | null;
+  businessName: string;
+  businessType: string;
+  requirements: string;
+  createdAt: Date;
+}
+
 export default async function AdminPage() {
-  const leads = await prisma.lead.findMany({
-    orderBy: { createdAt: "desc" },
-  });
+  let leads: Lead[] = [];
+  try {
+    leads = await prisma.lead.findMany({
+      orderBy: { createdAt: "desc" },
+    });
+  } catch (error) {
+    console.error("Failed to query leads on admin page:", error);
+  }
 
   return (
     <div className="min-h-screen bg-black text-white pt-28 sm:pt-32 px-4 sm:px-8 md:px-12 pb-24 selection:bg-white selection:text-black">
@@ -83,7 +99,7 @@ export default async function AdminPage() {
                     </td>
                   </tr>
                 ) : (
-                  leads.map((lead) => (
+                  leads.map((lead: Lead) => (
                     <tr key={lead.id} className="hover:bg-white/[0.03] transition-colors group">
                       <td className="py-5 px-6 whitespace-nowrap text-gray-400 font-mono text-xs">
                         {lead.createdAt.toLocaleDateString("en-US", {
@@ -130,7 +146,7 @@ export default async function AdminPage() {
                       <td className="py-5 px-6">
                         <div className="flex flex-wrap gap-1.5 max-w-xs">
                           {lead.requirements ? (
-                            lead.requirements.split(", ").map((req, i) => (
+                            lead.requirements.split(", ").map((req: string, i: number) => (
                               <span
                                 key={i}
                                 className="px-2.5 py-1 bg-white/[0.08] hover:bg-white/[0.12] border border-white/10 rounded-full text-xs text-gray-200 whitespace-nowrap transition-colors"

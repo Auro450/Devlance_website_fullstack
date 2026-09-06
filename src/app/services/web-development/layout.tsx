@@ -1,10 +1,23 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Affordable Website Development Agency | Full Stack Web Development",
+  title: "IT App Development & Web Solutions Agency | Devlance (dev-lance)",
   description:
-    "Devlance is the best affordable website development agency in Kolkata & West Bengal. We build high-speed, custom full-stack web applications, e-commerce, and healthcare platforms at cheap rates starting at ₹10,000.",
+    "Looking for IT app development near me or freelance website development near me? Devlance builds high-performance web apps, web solutions, data solutions & digital transformation for local business growth at affordable pricing from ₹10,000.",
   keywords: [
+    "Devlance",
+    "devlance",
+    "dev-lance",
+    "dev lance",
+    "it app development near me",
+    "freelance website development near me",
+    "it services near me",
+    "web development near me",
+    "web apps",
+    "web solutions",
+    "it solutions",
+    "data solutions",
+    "digital transformation",
     "affordable website development agency",
     "best web development agency",
     "full stack web development",
@@ -18,10 +31,10 @@ export const metadata: Metadata = {
     canonical: "/services/web-development",
   },
   openGraph: {
-    title: "Affordable Website Development Agency | Devlance",
+    title: "IT App Development & Custom Web Solutions | Devlance",
     description:
-      "Custom full-stack web applications, e-commerce, and cloud platforms engineered for scale at budget-friendly pricing.",
-    url: "https://devlance.in/services/web-development",
+      "Custom full-stack web applications, IT solutions, data solutions, e-commerce, and cloud platforms engineered for scale at budget-friendly pricing.",
+    url: "https://devlance.online/services/web-development",
   },
 };
 

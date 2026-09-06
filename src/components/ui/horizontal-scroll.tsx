@@ -17,7 +17,7 @@ const projects = [
     title: "Healthcare Platform",
     category: "Website Development",
     image: "/images/rays-medical-hd.png",
-    href: "/services/web-development#healthcare"
+    href: "https://www.raysmedical.co.in"
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const projects = [
     category: "Web Development",
     image: "/images/earthbags-ecommerce.png",
     imagePosition: "object-top",
-    href: "/services/web-development#ecommerce"
+    href: "https://shopearthbags.com/"
   },
   {
     id: 4,
@@ -122,31 +122,43 @@ export function HorizontalScroll() {
       
       <div className="w-full h-full overflow-x-auto md:overflow-visible snap-x snap-mandatory pt-20 touch-pan-x" data-lenis-prevent="true" style={{ WebkitOverflowScrolling: 'touch' }}>
         <div ref={scrollRef} className="flex gap-6 md:gap-24 px-6 md:px-24 w-max items-center h-full">
-          {projects.map((project, i) => (
-            <Link href={project.href || "#"} key={project.id} className="w-[85vw] md:w-[50vw] shrink-0 snap-center group block cursor-pointer">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-lg mb-6">
-              <Image 
-                src={project.image} 
-                alt={project.title} 
-                fill 
-                unoptimized
-                className={`object-cover ${project.imagePosition || "object-center"} transition-transform duration-700 group-hover:scale-105 contrast-110 saturate-125`}
-              />
-              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            </div>
-            <div className="flex justify-between items-end border-b border-white/20 pb-4">
-              <div>
-                <p className="text-sm text-gray-400 mb-2 uppercase tracking-widest font-mono">0{i+1} — {project.category}</p>
-                <h3 className="text-3xl md:text-5xl font-semibold tracking-tight">{project.title}</h3>
-              </div>
-              <button className="rounded-full border border-white p-4 hover:bg-white hover:text-black transition-colors">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </button>
-            </div>
-          </Link>
-        ))}
+          {projects.map((project, i) => {
+            const isExternal = project.href.startsWith("http");
+            const CardWrapper = isExternal ? "a" : Link;
+            const linkProps = isExternal 
+              ? { href: project.href, target: "_blank", rel: "noopener noreferrer" }
+              : { href: project.href };
+
+            return (
+              <CardWrapper 
+                key={project.id} 
+                {...(linkProps as any)}
+                className="w-[85vw] md:w-[50vw] shrink-0 snap-center group block cursor-pointer"
+              >
+                <div className="relative aspect-[4/3] overflow-hidden rounded-lg mb-6">
+                  <Image 
+                    src={project.image} 
+                    alt={project.title} 
+                    fill 
+                    unoptimized
+                    className={`object-cover ${project.imagePosition || "object-center"} transition-transform duration-700 group-hover:scale-105 contrast-110 saturate-125`}
+                  />
+                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                </div>
+                <div className="flex justify-between items-end border-b border-white/20 pb-4">
+                  <div>
+                    <p className="text-sm text-gray-400 mb-2 uppercase tracking-widest font-mono">0{i+1} — {project.category}</p>
+                    <h3 className="text-3xl md:text-5xl font-semibold tracking-tight">{project.title}</h3>
+                  </div>
+                  <button aria-label={`View ${project.title}`} className="rounded-full border border-white p-4 hover:bg-white hover:text-black transition-colors">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </button>
+                </div>
+              </CardWrapper>
+            );
+          })}
         </div>
       </div>
     </section>

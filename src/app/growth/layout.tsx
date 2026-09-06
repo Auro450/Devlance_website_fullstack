@@ -1,14 +1,22 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best Digital Marketing Agency in West Bengal | AI Automation & Growth",
+  title: "Digital Marketing Agency Near Me | AI & Digital Automation | Devlance",
   description:
-    "Devlance is the best digital marketing agency in West Bengal. Meta Ads, social media management, AI chatbots, and WhatsApp automation starting at an affordable pricing of ₹12,000/month.",
+    "Devlance (dev-lance) provides digital marketing near me, digital automation, AI chatbots, WhatsApp automation & Meta Ads to help local businesses grow rapidly at affordable pricing starting at ₹12,000/month.",
   keywords: [
-    "best digital marketing agency in west bengal",
-    "digital marketing agency in kolkata",
+    "Devlance",
+    "devlance",
+    "dev-lance",
+    "dev lance",
+    "digital marketing agency near me",
+    "digital marketing near me",
+    "digital automation",
     "ai automation agency",
     "whatsapp automation",
+    "helping local business to grow",
+    "best digital marketing agency in west bengal",
+    "digital marketing agency in kolkata",
     "meta ads agency",
     "affordable pricing",
     "cheap rate marketing agency",
@@ -18,10 +26,10 @@ export const metadata: Metadata = {
     canonical: "/growth",
   },
   openGraph: {
-    title: "Best Digital Marketing Agency in West Bengal | Devlance",
+    title: "Digital Marketing & Automation Agency Near Me | Devlance",
     description:
-      "Laser-targeted Meta Ads, AI automation, and high-impact growth marketing starting at ₹12,000/month.",
-    url: "https://devlance.in/growth",
+      "Laser-targeted Meta Ads, AI automation, and high-impact digital growth marketing for local business scaling.",
+    url: "https://devlance.online/growth",
   },
 };
 
