@@ -165,7 +165,7 @@ export default function WebDevelopment() {
           <BrandRow name="Jutebags" scope="Custom E-commerce • UI/UX" href="#" />
           <BrandRow name="Jaywalking" scope="High-Fashion E-commerce • Animation" href="https://www.jaywalking.in/?srsltid=AfmBOooLMEm8ujukjGIZ5og_4DAXKWKyFsmrQ8xMXKGTLvMxQ8krw2wA" />
           <BrandRow name="Tajacart" scope="Quick Commerce Web & App • Full Stack" href="https://www.tajacart.in" />
-          <BrandRow name="Jupiter Fresh" scope="Grocery Delivery App • UI/UX" href="#" />
+          <BrandRow name="Jupiter Fresh" scope="Quick Commerce Web & APK • In-House Delivery" href="https://www.jupiterfresh.co.in" />
         </div>
       </section>
 

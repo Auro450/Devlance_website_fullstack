@@ -16,7 +16,7 @@ const PARTNER_BRANDS = [
   { name: "Jutebags", scope: "Custom E-commerce • UI/UX", href: "https://shopearthbags.com" },
   { name: "Jaywalking", scope: "High-Fashion E-commerce • Animation", href: "https://www.jaywalking.in/?srsltid=AfmBOooLMEm8ujukjGIZ5og_4DAXKWKyFsmrQ8xMXKGTLvMxQ8krw2wA" },
   { name: "Tajacart", scope: "Quick Commerce Web & App • Full Stack", href: "https://www.tajacart.in" },
-  { name: "Jupiter Fresh", scope: "Grocery Delivery App • UI/UX", href: "https://www.tajacart.in" },
+  { name: "Jupiter Fresh", scope: "Grocery Delivery App • UI/UX", href: "https://www.jupiterfresh.co.in" },
   { name: "Ray's Medical", scope: "All-in-one Clinic • Appointments • Pathology • Medicine", href: "https://www.raysmedical.co.in" },
   { name: "Multicon Group", scope: "Enterprise Architecture • Custom CMS", href: "https://www.multicon.in" },
   { name: "Meatigo", scope: "Meat Delivery • E-commerce", href: "https://www.meatigo.com/?srsltid=AfmBOoqDmY5Vyxw6FVQd7TTgNv-2M0j6UcDJNOworI71WVk-cB0zoq4_" },

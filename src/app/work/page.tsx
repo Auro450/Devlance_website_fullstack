@@ -13,6 +13,7 @@ if (typeof window !== "undefined") {
 }
 
 const projects = [
+  { name: "Jupiter Fresh", type: "Quick Commerce WebApp & APK", url: "https://www.jupiterfresh.co.in", desc: "A high-octane quick commerce ecosystem powered by a lightning-fast WebApp, native APK, and an autonomous dispatch architecture built for rapid in-house delivery." },
   { name: "Tajacart", type: "E-Commerce", url: "https://www.tajacart.in", desc: "A lightning-fast quick commerce platform built with a robust custom backend architecture and seamless mobile-first frontend experience." },
   { name: "Jaywalking", type: "High-Fashion E-commerce", url: "https://www.jaywalking.in", desc: "A premium, aggressive, animation-heavy e-commerce experience tailored for a high-end streetwear brand." },
   { name: "Shopearthbags", type: "Retail UI/UX", url: "https://shopearthbags.com", desc: "Complete UI/UX overhaul and custom Shopify integration focusing on conversion rate optimization and brand storytelling." },
@@ -22,8 +23,7 @@ const projects = [
   { name: "Ray's Medical", type: "Healthcare", url: "https://www.raysmedical.co.in", desc: "An all-in-one clinic management portal with integrated appointments, pathology tracking, and medicine ordering." },
   { name: "Meatigo", type: "Meat Delivery • E-commerce", url: "https://www.meatigo.com/?srsltid=AfmBOoqDmY5Vyxw6FVQd7TTgNv-2M0j6UcDJNOworI71WVk-cB0zoq4_", desc: "A high-performance e-commerce and cold-chain logistics platform engineered to streamline seamless fresh meat ordering and on-demand delivery." },
   { name: "Cafe Bites", type: "Multi-vendor Delivery", url: "https://cafe-prototype-drab.vercel.app/", desc: "A fully custom multi-vendor food delivery app prototype with real-time tracking and aggressive UI scaling." },
-  { name: "Jutebags", type: "E-commerce", desc: "Custom-built retail platform emphasizing sustainable materials with a highly optimized global checkout flow." },
-  { name: "Jupiter Fresh", type: "Grocery Delivery", desc: "Hyper-local grocery delivery architecture designed to handle thousands of concurrent inventory updates per second." }
+  { name: "Jutebags", type: "E-commerce", desc: "Custom-built retail platform emphasizing sustainable materials with a highly optimized global checkout flow." }
 ];
 
 export default function WorkPage() {
