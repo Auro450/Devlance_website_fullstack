@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react";
 import { TextReveal } from "@/components/ui/text-reveal";
 
 const row1 = ["Shopearthbags", "Jutebags", "Ray's Medical", "Taja Cart", "Jupiter Fresh", "Sg Garai Ev", "Multicon Group", "Jaywalking"];
-const row2 = ["Anytime Fitness", "Meatigo", "Earthbags", "Jewel Box", "Falam Cafe", "Dada's Dhaba", "Cava Cafe"];
+const row2 = ["Anytime Fitness", "Meatigo", "Earthbags", "Pugas Motors", "Jewel Box", "Falam Cafe", "Dada's Dhaba", "Cava Cafe"];
 
 export function ClientMarquee() {
   const containerRef = useRef<HTMLDivElement>(null);

@@ -25,6 +25,8 @@ const services = [
 const clients = [
   { name: "EARTHBAGS", src: "/clients/earthbags.png" },
   { name: "TAJA CART", src: "/clients/tajacart-v2.png" },
+  { name: "MULTICON GROUP", src: "/clients/multicon-group.png" },
+  { name: "PUGAS MOTORS", src: "/clients/pugas-motors.png" },
   { name: "JUTEBAGS", src: "/clients/jutebags-v2.png" },
   { name: "JUPITER FRESH", src: "/clients/falam-v2.png" },
   { name: "CAVA", src: "/clients/cava.png" },
